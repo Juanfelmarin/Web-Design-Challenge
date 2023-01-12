@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Visualization Dashboard</title>
+    <title>Weather Web Page</title>
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
@@ -17,12 +17,86 @@
   </head>
 
   <body>
-    <!-- Start of navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="./index.html">Latitude Web Page</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../data.html">Data</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul>
+                <li>
+                  <a class="dropdown-item" href="../visualizations/cloudiness.html">Cloudiness</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../visualizations/humidity.html">Humidity</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../visualizations/temp.html">Temperature</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../visualizations/wind.html">Wind</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
     <!-- End of navbar -->
-
     <!-- Start of container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h1>Summary: Latitude vs. X</h1>
+              <img src="./assets/images/Fig1.png" alt="..." width="400px" height="400px" class="img-fluid">
+              <p>
+                The purpose of this webpage is the show how weather changes in relation to the equator and latitude of the city you are in. In order to obtain this information we pulled data from OpenWeather API for over 500 cities. 
+              </p>
+              <p>
+              Once we had the data, we examined the relationship between distance from the equator (latitude) and various weather
+              factors including temperature, cloudiness, humidity, and wind speed using visualizations. This website contains those visualizations. 
+              </p>
+          </div>
+        </div>
           <!-- Start of Visualizations imageNav Area -->
+          <div class="col col-sm-12 col-md-4">
+            <div class="box">
+              <h2>Visualizations</h2>
+              <hr>
+              <a href="./visualizations/temp.html">
+                <img src="./assets/images/Fig1.png" alt="City Latitude vs. Max Temp" width="400px" height="400px">
+              </a>
+  
+              <a href="./visualizations/humidity.html">
+                <img src="./assets/images/Fig2.png" alt="City Latitude vs. Humidity" width="400px" height="400px">
+              </a>
+  
+              <a href="./visualizations/cloudiness.html">
+                <img src="./assets/images/Fig3.png" alt="City Latitude vs. Cloudiness" width="400px" height="400px">
+              </a>
+  
+              <a href="./visualizations/wind.html">
+                <img src="./assets/images/Fig4.png" alt="City Latitude vs. Wind Speed" width="400px" height="400px">
+              </a>
+  
+            </div>
+          </div>
           <!-- End of the Visualizations imageNav Area -->
+
     <!-- End of container -->
 
     <!-- jQuery CDN -->

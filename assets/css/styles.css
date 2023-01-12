@@ -1,0 +1,43 @@
+.navbar {
+  max-height: 70px;
+  background-color: rgb(63, 230, 236);
+  font-size: 16px;
+}
+.dropdown-item{
+  color: #6D8092; 
+}
+body {
+  background: #ffffff;
+}
+
+h1 {
+  font-size: 70px;
+  background: #457e997f;
+  color:black;
+  text-align:center
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(117, 185, 221);
+
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+.nav-item {
+  padding: 15px;
+
+}
+
+p {
+  margin-left: 30px;
+  background: #798395;
+  padding: 5px;
+  font-size:large;
+
+}
